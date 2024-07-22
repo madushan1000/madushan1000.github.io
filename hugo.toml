@@ -1,0 +1,7 @@
+baseURL = 'madushan.caas.lk'
+languageCode = 'en-us'
+title = "Madushan's Blog"
+theme = "cactus"
+
+[params]
+colortheme = "light"
