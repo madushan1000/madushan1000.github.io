@@ -4,6 +4,6 @@
       "name":"wayrs client transport virtgpu",
       "url":"https://github.com/madushan1000/wayrs-client-transport-virtgpu",
       "desc":"crosvm virtgpu wayland transport layer for wayrs library"
-    },
+    }
   ]
 }
