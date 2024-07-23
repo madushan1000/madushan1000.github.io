@@ -148,6 +148,49 @@ body {
 @import "partial/tooltip";
 @import "partial/categories";
 
+.highlight div .code-header {
+  display: flex;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  border-bottom: 1px solid gray;
+  justify-content: space-between;
+}
+
+.code-header > .code-title {
+  top: 0;
+  left: 0;
+  border: 0;
+  padding: 0;
+  padding-left: 10px;
+  border-radius: 0 2px;
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 800;
+  font-size: 0.9em;
+  line-height: 1.7;
+  min-width: 60px;
+  letter-spacing: 0em;
+}
+.code-header > .code-copy-btn {
+  top: 0;
+  right: 0;
+  border: 0;
+  border-radius: 0 2px;
+  padding: 0;
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 800;
+  font-size: 0.9em;
+  line-height: 1.7;
+  color: #fff;
+  background-color: #8c8c8c;
+  min-width: 60px;
+  text-align: center;
+  cursor: pointer;
+  letter-spacing: 0em;
+  margin-left: auto;
+}
+
 pre {
   overflow-x: auto;
   padding: 15px 15px 10px 15px;
@@ -159,24 +202,6 @@ pre {
   line-height: 22px;
   position: relative;
 
-  .code-copy-btn {
-    position: absolute;
-    top: 0;
-    right: 0;
-    border: 0;
-    border-radius: 0 2px;
-    padding: 0;
-    font-family: "JetBrains Mono", monospace;
-    font-weight: 800;
-    font-size: 0.9em;
-    line-height: 1.7;
-    color: #fff;
-    background-color: #8c8c8c;
-    min-width: 60px;
-    text-align: center;
-    cursor: pointer;
-    letter-spacing: 0em;
-  }
 
   .code-copy-btn:hover {
     background-color: #666;
@@ -186,11 +211,14 @@ pre {
   code {
     display: block;
     padding: 0;
+    padding-top: 5px;
     border: none;
   }
 }
 
 code {
+  white-space: pre-wrap;
+  word-break: break-word; 
   font-family: $font-family-mono;
   padding: 0 5px;
   border: 1px dotted $color-border;
