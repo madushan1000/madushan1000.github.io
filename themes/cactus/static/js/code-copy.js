@@ -32,7 +32,7 @@
     return header;
 }
 
-  document.querySelectorAll('.highlight')
+  document.querySelectorAll('div.highlight')
   .forEach((hlNode) => {
         let header = createHeader(hlNode);
         hlNode.firstElementChild.insertBefore(header, hlNode.firstElementChild.firstElementChild);
